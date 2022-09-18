@@ -1,8 +1,6 @@
 <?php
- require "app/main/Farm.php";
- require "app/main/Animal.php";
- require "app/main/Cow.php";
- require "app/main/Chicken.php";
+
+ require "vendor/autoload.php";
 
 $ferma = new \App\Main\Farm();
 
