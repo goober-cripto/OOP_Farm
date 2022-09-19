@@ -2,13 +2,18 @@
 
 namespace App\Main;
 
-class Chicken extends Animal {
+use App\Main\Animal;
 
-    public function __construct() {
+class Chicken extends Animal
+{
+
+    public function __construct()
+    {
         $this->idAnimal = parent::$id++;
     }
 
-    public function getTovar() :int {
-        return rand(0,1);
+    public function getTovar(): int
+    {
+        return rand(0, 1);
     }
 }
